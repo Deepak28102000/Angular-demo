@@ -1,0 +1,23 @@
+<p>profile works!</p>
+
+<button (click)="getuserData()">profile</button>
+
+
+<div *ngFor="let obj of numList ">
+
+    
+    <div class="card-container">
+        <div class="card">
+          <img src="{{ obj.avatar }}" alt="Avatar">
+         <p>Deepak</p>
+          <img src="../../assets/images/house-1836070__340.jpg" alt="Avatar">
+          
+          <div class="card-content">
+            <h4>{{ obj.name }}</h4>
+            <p> {{ obj.id }}</p>
+            <p> {{ obj.createdAt | date}}</p>
+            
+          </div>
+        </div>
+    </div>
+</div>
